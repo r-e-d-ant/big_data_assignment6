@@ -21,3 +21,4 @@ urlpatterns = [
     path('home/', include('rdbHome.urls')),
     path('admin/', admin.site.urls),
 ]
+

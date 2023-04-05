@@ -1,5 +1,7 @@
+
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.template  import loader
 
 def index(request):
-    return HttpResponse("Hello, world. You're at RDB home page.")
+    template = loader.get_template("rdbHome/index.html")
+    return render(request, "rdbHome/index.html")
